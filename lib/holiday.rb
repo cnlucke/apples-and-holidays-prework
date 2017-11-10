@@ -22,18 +22,22 @@ def second_supply_for_fourth_of_july(holiday_hash)
 end
 
 def add_supply_to_winter_holidays(holiday_hash, supply)
+  test = ""
+  test2 = ""
   # holiday_hash is identical to the one above
   # add the second argument, which is a supply, to BOTH the
   # Christmas AND the New Year's arrays
   holiday_hash.each do |season, holiday|
     if (holiday == :christmas || holiday == :new_years)
       holiday.each do |holiday, supply_list|
+        test = "The holiday is #{holiday}. "
+        test2 = "The supplies are #{supply_list}"
         supply_list << supply
       end
     end
   end
 
-  holiday_hash
+  test + test2
 end
 
 
