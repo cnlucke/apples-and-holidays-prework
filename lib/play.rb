@@ -13,3 +13,5 @@ supplies = {
     :memorial_day => ["BBQ"]
   }
 }
+
+add_new_holiday_with_supplies(supplies, :fall, "Columbus Day", ["supply1", "supply2"])
