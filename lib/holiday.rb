@@ -22,8 +22,6 @@ def second_supply_for_fourth_of_july(holiday_hash)
 end
 
 def add_supply_to_winter_holidays(holiday_hash, supply)
-  test = ""
-  test2 = ""
   # holiday_hash is identical to the one above
   # add the second argument, which is a supply, to BOTH the
   # Christmas AND the New Year's arrays
@@ -34,8 +32,8 @@ def add_supply_to_winter_holidays(holiday_hash, supply)
       end
     end
   end
-
-  test + test2
+  
+  holiday_hash
 end
 
 
